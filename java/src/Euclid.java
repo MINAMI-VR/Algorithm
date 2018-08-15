@@ -1,7 +1,7 @@
 public class Euclid {
     int x, y;
 
-    public void put(int a, int b) {
+    public void set(int a, int b) {
         this.x = a;
         this.y = b;
         if (a < b) {

@@ -7,7 +7,7 @@ public class Test {
         var b = r.nextInt(100) + 1;
 
         Euclid e = new Euclid();
-        e.put(a, b);
+        e.set(a, b);
         var gcd = e.getGCD();
         System.out.println(a + ", " + b);
         System.out.println("GCD = " + gcd);
@@ -43,6 +43,30 @@ public class Test {
         SelectSort select = new SelectSort();
         ra.printArray(arr);
         select.selectSort(arr);
+        ra.printArray(arr);
+        System.out.println();
+    }
+
+    /*
+        public void quickSortTest() {
+            RandomArray ra = new RandomArray();
+            int arr[] = ra.getRandomArray();
+
+            QuickSort quick = new QuickSort();
+            ra.printArray(arr);
+            quick.quickSort(arr);
+            ra.printArray(arr);
+            System.out.println();
+        }
+    */
+
+    public void bucketSortTest() {
+        RandomArray ra = new RandomArray();
+        int arr[] = ra.getRandomArray();
+
+        CountingSort bucket = new CountingSort();
+        ra.printArray(arr);
+        bucket.countingSort(arr);
         ra.printArray(arr);
         System.out.println();
     }

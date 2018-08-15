@@ -5,6 +5,7 @@ public class Main {
         test.bubbleSortTest();
         test.insertSortTest();
         test.selectSortTest();
+        test.bucketSortTest();
         test.sequentialSearchTest();
     }
 }
